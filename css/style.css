@@ -906,6 +906,12 @@ h3.my-profession
     }
     .container
     {min-width: 100%;}
+    .home-img::before{
+        left:11%;
+        top:-8%;}
+    .home-img::after{
+        right:11%;
+        bottom:11%;}
 }
 
 @media (max-width:991px)
