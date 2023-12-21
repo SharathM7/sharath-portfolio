@@ -390,7 +390,7 @@ h3.my-profession
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
     right: 8%;
-    bottom: 15%;
+    bottom:8%;
 }
 
 .home-img::before
@@ -864,6 +864,12 @@ h3.my-profession
 {
     height: 50px;
     padding: 0 50px;
+}
+
+@media (max-width:1443px){
+    .home-img::after{
+        bottom:15%;;
+    }
 }
 
 @media (max-width:1199px)
