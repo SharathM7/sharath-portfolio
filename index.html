@@ -591,34 +591,35 @@
             </h4>
             <!-- Contact Form -->
             <div class="row">
-              <div class="contact-form padd-15">
+              <form action="https://api.web3forms.com/submit" method="POST" class="contact-form padd-15">
+                <input type="hidden" name="access_key" value="7a227a88-b8d5-4d7f-abee-d4d4109fc3e8">
                 <div class="row">
                   <div class="form-item col-6 padd-15">
                     <div class="form-group">
                       <label for="">Name</label>
-                      <input type="text" class="form-control" />
+                      <input type="text" name="name" class="form-control" required/>
                     </div>
                   </div>
                   <div class="form-item col-6 padd-15">
                     <div class="form-group">
                       <label for="">Email</label>
-                      <input type="email" class="form-control" />
+                      <input type="email" name="email" class="form-control" required/>
                     </div>
                   </div>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                   <div class="form-item col-12 padd-15">
                     <div class="form-group">
                       <label for="">Subject</label>
-                      <input type="text" class="form-control" />
+                      <input type="text" name="message" class="form-control" />
                     </div>
                   </div>
-                </div>
+                </div> -->
                 <div class="row">
                   <div class="form-item col-12 padd-15">
                     <div class="form-group">
                       <label for="">Message</label>
-                      <textarea name="" id="" class="form-control"></textarea>
+                      <textarea name="message" id="" class="form-control"></textarea>
                     </div>
                   </div>
                 </div>
@@ -627,7 +628,7 @@
                     <button type="submit" class="btn">Send Message</button>
                   </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </section>
